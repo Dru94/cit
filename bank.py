@@ -93,12 +93,14 @@ def main():
         print("Enter a name for the bank: ")
         new_bank = input()
         Bank(new_bank)
+        print("***** Bank Created *****")
         sys.exit(1)
 
     elif x == "B":
         print("Enter customer name: ")
         new_customer = input()
         Customer(new_customer)
+        print("**** Customer Created ****")
         sys.exit(1)
 
     elif x == "C":
@@ -113,6 +115,7 @@ def main():
 
         BankAccount(new_account_number, new_account_balance,
                     new_account_owner, new_account_type)
+        print("**** Account Created ****")
         sys.exit(1)
 
     sys.exit(1)
